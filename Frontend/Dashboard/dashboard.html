@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dashBoard.css" />
+    <link rel="stylesheet" href="../landing_page/nav_bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- <script defer src="./dashBoard.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+    ></script>
+    <script defer src="./dashboard.js"></script>
+  </head>
+  <body>
+    <div class="Navigation-bar"></div>
+    <div class="alert-msgs">
+      <span class="info">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </span>
+      <span class="alert-msg">Warning: Email/Password is invalid</span>
+      <div class="close-btn">
+        <span class="close-info"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="circular-image">
+        <img src="../Images/profile.avif" alt="profile" />
+      </div>
+      <p class="dash">Dashboard</p>
+      <div class="btns">
+        <a href="#" class="anc reg register-donor">Register as Donor</a>
+        <a href="#" class="anc reg unregister-donor hidden"
+          >Unregister as Donor</a
+        >
+        <a class="anc" href="../Donors_page/donors.html">Find a Donor</a>
+      </div>
+      <div class="form">
+        <div class="box">
+          <p class="label">Full Name</p>
+          <span class="text spann" id="fname"></span>
+          <p class="label">Phone Number</p>
+          <span class="text spann" id="number"></span>
+          <p class="label">Email id</p>
+          <span class="text spann" id="email"></span>
+          <p class="label">State</p>
+          <select id="state" disabled id="state"></select>
+          <p class="label">City</p>
+          <select id="city" id="city" disabled></select>
+          <p class="label">Blood Group</p>
+          <select id="b-group" id="b-group" disabled></select>
+          <div class="btns-edit">
+            <button class="btn" id="edit-btn">Edit</button>
+            <button class="btn hidden" id="save-btn">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

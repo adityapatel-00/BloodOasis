@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="nav_bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script defer src="./landing_page.js"></script>
+    <script
+      defer
+      src="../../Backend/node_modules/axios/dist/axios.min.js"
+    ></script>
+
+    <title>Blood Oasis</title>
+  </head>
+  <body>
+    <div class="Navigation-bar">
+      <div class="logo">
+        <img class="logo-img" src="../Images/logo.png" alt="logo" />
+        <p class="logo-text">Blood Oasis</p>
+      </div>
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#section-2">Merits</a>
+      <a class="nav-link" href="#section-3">Feedback</a>
+      <a class="nav-link logsig" href="../login_page/login.html"
+        >Login/SignUp</a
+      >
+      <a class="nav-link dashb hidden" href="../Dashboard/dashboard.html"
+        >My Dashboard</a
+      >
+    </div>
+    <header>
+      <img class="header-img" src="../Images/index.jpg" alt="Blood Donation" />
+      <div class="header">
+        <h1>
+          Saving Lives Starts With You: Donate
+          <span class="blood">Blood</span> and Be the Change
+        </h1>
+        <a class="find-Donor-link" href="../login_page/login.html"
+          >Find a Donor</a
+        >
+      </div>
+    </header>
+    <section class="merits" id="section-2">
+      <h1>Merits of this Website</h1>
+      <div class="merits-flex">
+        <div class="merits-box">
+          <img
+            class="merits-img"
+            src="../Images/access.jpeg"
+            alt="accessability"
+          />
+          <div class="merits-small-box">
+            <h3 class="merits-h">Accessibility</h3>
+            <p class="merits-p">
+              Our website provides a convinient platform that is accessable
+              24/7, it provides a user-friendly online platform, people can
+              easily access information about nearby donation centers. This
+              accessibility ensures that individuals can conveniently find and
+              engage in the blood donation process, regardless of their location
+              or time constraints.
+            </p>
+          </div>
+        </div>
+        <div class="merits-box">
+          <img
+            class="merits-img"
+            src="../Images/groups.jpeg"
+            alt="accessability"
+          />
+          <div class="merits-small-box">
+            <h3 class="merits-h">Efficiency in Matching</h3>
+            <p class="merits-p">
+              The efficiency of matching donors with recipients is a vital
+              benefit this website. This platform incorporate extensive
+              databases that efficiently match potential donors based on their
+              blood type. By streamlining the matching process,online platforms
+              help expedite the delivery of blood to patients who require it
+              urgently.
+            </p>
+          </div>
+        </div>
+        <div class="merits-box">
+          <img
+            class="merits-img"
+            src="../Images/map.jpeg"
+            alt="accessability"
+          />
+          <div class="merits-small-box">
+            <h3 class="merits-h">Enhanced Reach</h3>
+            <p class="merits-p">
+              This websites extends the reach of blood donation initiatives
+              beyond geographical boundaries. It provides a platform for
+              potential donars from various locations to participate in
+              donation. This expanded reach is particulary valuable for rare
+              blood types or during emergencies when finding compactible donors
+              quickly can be a matter of life and death.
+            </p>
+          </div>
+        </div>
+        <div class="merits-box">
+          <img
+            class="merits-img"
+            src="../Images/time.jpeg"
+            alt="accessability"
+          />
+          <div class="merits-small-box">
+            <h3 class="merits-h">Time Saving</h3>
+            <p class="merits-p">
+              Time is of the essence in the world of blood donation, and our
+              website helps save precious time for both donors and healthcare
+              organizations. This rapid response system ensuring that lifesaving
+              blood os available promptly when needed the most. While healthcare
+              organizations can optimize their resources and manage their
+              operations more effectively.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="alert-msgs">
+      <span class="info">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </span>
+      <span class="alert-msg">Warning: Email/Password is invalid</span>
+      <div class="close-btn">
+        <span class="close-info"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </div>
+    <div class="feedback" id="section-3">
+      <form>
+        <div class="feedback-form">
+          <p class="feedback-p">
+            Your valuable feebacks always help us improve
+          </p>
+          <div class="box">
+            <input class="input name feedback-name" name="name" required />
+            <label class="label">Name</label>
+          </div>
+          <div class="box">
+            <textarea class="input text feedback-text" required> </textarea>
+            <label class="label">Feedback</label>
+          </div>
+          <button class="form-button feedback-send">Send</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

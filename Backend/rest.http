@@ -1,0 +1,97 @@
+GET http://localhost:3000
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg4MTcxNDUsImV4cCI6MTY4ODgxNzE1MCwiYXVkIjoiNjRhOTNjMDhhNjE4MWEzOGZiYmUzMzcyIiwiaXNzIjoiYWRpdHlhcGF0ZWwuY29tIn0.4ujMnCS5d6_x3paxzyZPgSgfPs6fSDsD1i_FNGKWbqY
+
+
+###Login route
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"suryasree@gmail.com",
+    "password":"12345"
+}
+
+###Register route
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "fullName":"Surya sree Bathini",
+    "email":"suryasree@gmail.com",
+    "password":"12345",
+    "phoneNumber":"9705190552",
+    "bloodGroup":"O+",
+    "state":"Telangana",
+    "city":"Karimnagar"
+}
+
+
+###Get Details
+POST http://localhost:3000/auth/getDetails
+Content-Type: application/json
+
+{
+    "userId":"64aaaa9bd0cffb74b558f9d1"
+}
+
+###Logout route
+DELETE http://localhost:3000/auth/logout
+
+
+###Register as Donor
+POST http://localhost:3000/auth/registerDonor
+Content-Type: application/json
+
+{
+    "userId":"64aaaa9bd0cffb74b558f9d1"
+}
+
+###Edit details
+POST http://localhost:3000/auth/editDetails
+Content-Type: application/json
+
+{
+    "userId":"64acf78e93034d6cf8f7b327",
+    "fullName":"Surya sree Bathini",
+    "email":"suryasree61@gmail.com",
+    "password":"12345",
+    "phoneNumber":"9705190552",
+    "bloodGroup":"O+",
+    "city":"Karimnagar"
+}
+
+
+###Find Donors
+POST http://localhost:3000/auth/findDonors
+Content-Type: application/json
+
+{
+    "bloodGroup":"O+",
+    "state":"Telangana",
+    "city":"Karimnagar"
+}
+
+###Unregister as donor
+POST http://localhost:3000/auth/unregisterDonor
+Content-Type: application/json
+
+{
+    "userId":"64aaaa9bd0cffb74b558f9d1"
+}
+
+###Check if donor
+POST http://localhost:3000/auth/checkDonor
+Content-Type: application/json
+
+{
+    "userId":"64aaaa9bd0cffb74b558f9d1"
+}
+
+###
+POST http://localhost:3000/auth/feedback
+Content-Type: application/json
+
+{
+    "Name":"Aditya Patel",
+    "feedback":"Great Job!"
+}

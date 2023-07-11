@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+html {
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-img {
+  width: 45rem;
+  height: auto;
+  border-radius: 20px;
+  margin: 70px 50px 100px 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.blood {
+  color: red;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-right: 30px;
+}
+
+.header a {
+  text-decoration: none;
+  margin: 7px 0;
+  margin-top: 50px;
+  padding: 7px 15px;
+  border-radius: 15px;
+  background: linear-gradient(to top left, #ff0f7b, #f89b29);
+  color: #fff;
+  min-width: 120px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 50;
+}
+
+.merits h1 {
+  font-size: 2.5rem;
+  margin: 40px 100px;
+}
+
+.merits-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.merits-img {
+  width: 220px;
+  height: auto;
+  justify-self: center;
+}
+
+.merits-box {
+  box-shadow: 10px 20px 10px 5px rgba(0, 0, 0, 0.052);
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  min-width: 580px;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 25px;
+  min-height: 250px;
+  margin-bottom: 50px;
+  /* gap: 30px; */
+}
+
+.merits-small-box {
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+  gap: 20px;
+  align-self: center;
+}
+
+.merits-img {
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.merits-h {
+  align-self: center;
+  font-size: 17px;
+}
+
+.merits-p {
+  color: rgb(113, 113, 113);
+  font-size: 1rem;
+}
+
+.feedback-form {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 500px;
+  margin: 40px auto;
+  gap: 10px;
+}
+
+label {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #0000008a;
+}
+
+.input {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+}
+
+.input {
+  background-color: #cfcfcf;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  resize: none;
+}
+
+.box {
+  position: relative;
+  align-self: center;
+  margin: 0;
+}
+
+.box input,
+.box textarea {
+  width: 400px;
+  padding: 10px;
+  padding-top: 20px;
+  border: none;
+  background-color: #f8f9fa;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.box input:focus,
+.box textarea:focus {
+  outline: none;
+  border: none;
+}
+
+.box label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: top 0.3s, font-size 0.3s, color 0.3s;
+  pointer-events: none;
+}
+
+.box input:focus + label,
+.box input:valid + label,
+.box textarea:focus + label,
+.box textarea:valid + label {
+  padding-top: 12px;
+  top: 5px;
+  font-size: 9px;
+  color: #cccccc;
+}
+
+.form-button {
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin-top: 20px;
+  border: none;
+  background: linear-gradient(to top left, #ff0f7b, #f89b29);
+  align-self: center;
+  color: #fff;
+}
+
+.header a:hover,
+.form-button:hover {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.16);
+  color: rgb(0, 0, 0);
+  background: none;
+}
+
+.feedback-p {
+  /* background-color: #888; */
+  font-size: larger;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.138);
+  box-shadow: 10px 2px 20px 5px rgba(0, 0, 0, 0.052);
+  border-radius: 15px;
+  color: #ff0f7b;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ALERT MESSAGES */
+
+.alert-msgs {
+  bottom: -112%;
+  display: flex;
+  position: absolute;
+  right: -50%;
+  height: 50px;
+  background-color: rgb(252, 162, 150);
+  border-left: 5px solid red;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.info {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.close-info {
+  font-size: 1.3rem;
+  padding: 10px;
+  padding-right: 15px;
+  cursor: pointer;
+}

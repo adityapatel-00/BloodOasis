@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../landing_page/nav_bar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      defer
+      src="../../Backend/node_modules/axios/dist/axios.min.js"
+    ></script>
+    <script defer src="./login.js"></script>
+    <script defer src="../landing_page/nav_bar.js"></script>
+  </head>
+  <body>
+    <div class="Navigation-bar"></div>
+    <div class="alert-msgs">
+      <span class="info">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </span>
+      <span class="alert-msg">Warning: Email/Password is invalid</span>
+      <div class="close-btn">
+        <span class="close-info"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </div>
+    <div class="display">
+      <div class="container">
+        <div class="part1">
+          <h1>Login to Your Account</h1>
+          <form>
+            <div class="form">
+              <div class="box">
+                <input class="input name" id="email" name="email" required />
+                <!-- <input class="btn" type="text" id="email" name="id" required /> -->
+                <label class="label">Email</label>
+              </div>
+              <div class="box">
+                <input
+                  class="input text"
+                  id="password"
+                  type="password"
+                  required
+                />
+                <label class="label">Password</label>
+              </div>
+              <button class="form-button" id="submit-button">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="part2">
+          <h1>New Here?</h1>
+          <p>Sign up and help a great amount of people</p>
+          <a href="../signup_page/signup.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <!-- <button class="close-alert">Close Alert</button> -->
+  </body>
+</html>

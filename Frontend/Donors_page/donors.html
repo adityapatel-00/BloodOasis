@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./donors.css" />
+    <script
+      defer
+      src="../../Backend/node_modules/axios/dist/axios.min.js"
+    ></script>
+    <script defer src="./donors.js"></script>
+    <title>Find a Donar</title>
+  </head>
+  <body>
+    <div class="alert-msgs">
+      <span class="info">
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </span>
+      <span class="alert-msg">Warning: Email/Password is invalid</span>
+      <div class="close-btn">
+        <span class="close-info"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </div>
+    <div class="div">
+      <h1>Find a <span class="red">Donar</span></h1>
+      <div class="flex">
+        <select class="select-blood-group" id="blood-group-select" required>
+          <option value="-200">Select Blood Group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+        <select class="select-state" id="state-select" required>
+          <option value="-200">Select State</option>
+          <option value="Telangana">Telangana</option>
+        </select>
+        <select class="select-city" id="city-select" required>
+          <option value="-200">Select City</option>
+          <option value="Achampet">Achampet</option>
+          <option value="Adilabad">Adilabad</option>
+          <option value="Alampur">Alampur</option>
+          <option value="Andole">Andole</option>
+          <option value="Armoor">Armoor</option>
+          <option value="Asifabad">Asifabad</option>
+          <option value="Banswada">Banswada</option>
+          <option value="Bellampalli">Bellampalli</option>
+          <option value="Bhadrachalam">Bhadrachalam</option>
+          <option value="Bhongir">Bhongir</option>
+          <option value="Bodhan">Bodhan</option>
+          <option value="Chevella">Chevella</option>
+          <option value="Devarakonda">Devarakonda</option>
+          <option value="Gajwel">Gajwel</option>
+          <option value="Husnabad">Husnabad</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Jagitial">Jagitial</option>
+          <option value="Jangaon">Jangaon</option>
+          <option value="Karimnagar">Karimnagar</option>
+          <option value="Kagaznagar">Kagaznagar</option>
+          <option value="Kalwakurthy">Kalwakurthy</option>
+          <option value="Kamareddy">Kamareddy</option>
+          <option value="Khammam">Khammam</option>
+          <option value="Kodad">Kodad</option>
+          <option value="Koratla">Koratla</option>
+          <option value="Kothagudem">Kothagudem</option>
+          <option value="Mahabubabad">Mahabubabad</option>
+          <option value="Mahbubnagar">Mahbubnagar</option>
+          <option value="Mandamarri">Mandamarri</option>
+          <option value="Mancherial">Mancherial</option>
+          <option value="Manthani">Manthani</option>
+          <option value="Medak">Medak</option>
+          <option value="Miryalaguda">Miryalaguda</option>
+          <option value="Nagarkurnool">Nagarkurnool</option>
+          <option value="Nalgonda">Nalgonda</option>
+          <option value="Narayanpet">Narayanpet</option>
+          <option value="Nirmal">Nirmal</option>
+          <option value="Nizamabad">Nizamabad</option>
+          <option value="Palwancha">Palwancha</option>
+          <option value="Ramagundam">Ramagundam</option>
+          <option value="Sadasivpet">Sadasivpet</option>
+          <option value="Sangareddy">Sangareddy</option>
+          <option value="Sathupally">Sathupally</option>
+          <option value="Siddipet">Siddipet</option>
+          <option value="Siricilla">Siricilla</option>
+          <option value="Suryapet">Suryapet</option>
+          <option value="Tandur">Tandur</option>
+          <option value="Vemulawada">Vemulawada</option>
+          <option value="Vikarabad">Vikarabad</option>
+          <option value="Vikarabad">Vikarabad</option>
+          <option value="Wanaparthy">Wanaparthy</option>
+          <option value="Warangal">Warangal</option>
+          <option value="Yellandu">Yellandu</option>
+          <option value="Yellareddy">Yellareddy</option>
+          <option value="Zaheerabad">Zaheerabad</option>
+        </select>
+        <button class="find-btn">Find</button>
+        <button class="back-btn">Back</button>
+      </div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>

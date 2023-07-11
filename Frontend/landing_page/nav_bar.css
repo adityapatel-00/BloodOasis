@@ -1,0 +1,42 @@
+.Navigation-bar {
+  margin: 15px;
+  display: flex;
+  gap: 5px;
+  letter-spacing: 1px;
+  /* position: fixed; */
+  /* background-color: #fec89a; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.464);
+  padding-left: 0.5rem;
+}
+
+.nav-link,
+.nav-link:visited {
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 7px 0;
+  padding: 7px 15px;
+  border-radius: 15px;
+}
+
+.nav-link:hover {
+  background: linear-gradient(to top left, #ff0f7b, #f89b29);
+  color: #fff;
+}
