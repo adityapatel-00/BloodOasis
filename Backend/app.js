@@ -5,7 +5,6 @@ const cors = require("cors");
 
 require("dotenv").config();
 require("./helpers/init_mongodb");
-// const { verifyAccessToken } = require("./helpers/jwt_helper");
 const authRoute = require("./routes/auth.route");
 
 const app = express();
