@@ -10,4 +10,4 @@ Objective : Find Nearby donors in case of a blood emergency <br>
 
 Preview: <br>
 
-![alt text]([https://github.com/adityapatel-00/BloodOasis/blob/main/Images/Landing.png))
+![Alt text](https://github.com/adityapatel-00/BloodOasis/blob/main/Images/Landing.png)
