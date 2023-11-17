@@ -14,7 +14,7 @@ Preview: <br>
 ![Alt text](https://github.com/adityapatel-00/BloodOasis/blob/main/Images/Landing2.png)
 ![Alt text](https://github.com/adityapatel-00/BloodOasis/blob/main/Images/Signup.png)
 ![Alt text](https://github.com/adityapatel-00/BloodOasis/blob/main/Images/Login.png)
-![Alt text](https://github.com/adityapatel-00/BloodOasis/blob/main/Images/Dashbioard.png)
+![Alt text](https://github.com/adityapatel-00/BloodOasis/blob/main/Images/Dashboard.png)
 ![Alt text](https://github.com/adityapatel-00/BloodOasis/blob/main/Images/Find.png)
 
 
